@@ -1,0 +1,31 @@
+<template>
+  <header>
+    <div class="container">
+      <h1 class="logo">Kars4Kash</h1>
+
+      <nav>
+        <ul>
+          <li><a onclick={handleHome}>Home</a></li>
+          <li><a onclick={handleScrollVehicles}>Vehicles</a></li>
+          <li><a onclick={handleForm}>Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- <c-main-header></c-main-header> -->
+  <template if:false={showForm}>
+    <c-main-hero></c-main-hero>
+    <div class="scroll" data-id="vehicleTop"></div>
+    <c-car-search></c-car-search>
+    <c-main-info></c-main-info>
+  </template>
+
+  <template if:true={showForm}>
+    <c-main-form></c-main-form>
+    <c-request-quota></c-request-quota>
+    <c-maintenance-request></c-maintenance-request>
+  </template>
+
+  <c-main-footer></c-main-footer>
+</template>

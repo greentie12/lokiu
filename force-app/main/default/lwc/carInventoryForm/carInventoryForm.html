@@ -1,0 +1,23 @@
+<template>
+  <lightning-layout class="slds-align_absolute-center slds-text-align_center">
+    <lightning-layout-item>
+      <!-- {onchange} event to update the page 
+            when the user changes the "car Type"
+            ... options for {carTypes} coming 
+            from proprties declared in JS file 
+        -->
+      <h4>Search Current Inventory</h4>
+      <lightning-combobox
+        name="carTypes"
+        label="Car Category"
+        placeholder="All Cars"
+        value={clickedVal}
+        onchange={handleCarTypeChange}
+        variant="label-hidden"
+        options={carTypes}
+        class="box"
+      >
+      </lightning-combobox>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>

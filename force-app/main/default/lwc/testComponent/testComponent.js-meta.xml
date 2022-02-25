@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="myComponent">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Test Component</masterLabel>
+    <description>My Test Component</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <!--  
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property type="String" name="stringProp" default="hello world"/>
+            <property type="Integer" name="integerProp" default="314"/>
+            <property type="Boolean" name="booleanProp" default="true"/>
+            <property type="Color" name="colorProp" default="#333333"/>
+            <property type="Picklist" name="picklistProp" datasource="item1,item2"/>
+        </targetConfig>
+    </targetConfigs>
+-->
+</LightningComponentBundle>

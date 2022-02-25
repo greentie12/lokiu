@@ -1,0 +1,62 @@
+<template>
+  <div class="form-div">
+    <section class="hero"></section>
+    <div class="contact slds-text-align_center"><h1>Contact Us</h1></div>
+
+    <div class="container">
+      <form
+        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+        method="POST"
+        target="_self"
+      >
+        <input type="hidden" name="oid" value="00D8c000004e6Vq" />
+
+        <label for="first_name">First Name<span class="red">*</span></label
+        ><input
+          id="first_name"
+          maxlength="40"
+          name="first_name"
+          size="20"
+          type="text"
+        /><br />
+
+        <label for="last_name">Last Name</label
+        ><input
+          id="last_name"
+          maxlength="80"
+          name="last_name"
+          size="20"
+          type="text"
+        /><br />
+
+        <label for="email">Email<span class="red">*</span></label
+        ><input
+          id="email"
+          maxlength="80"
+          name="email"
+          size="20"
+          type="text"
+        /><br />
+
+        <label for="phone">Phone</label
+        ><input
+          id="phone"
+          maxlength="40"
+          name="phone"
+          size="20"
+          type="text"
+        /><br />
+
+        <label for="description">Description<span class="red">*</span></label
+        ><textarea name="description"></textarea><br />
+
+        <input
+          class="btn"
+          type="submit"
+          name="submit"
+          value="SEND YOUR MESSAGE"
+        />
+      </form>
+    </div>
+  </div>
+</template>

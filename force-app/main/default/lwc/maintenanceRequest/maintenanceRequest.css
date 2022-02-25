@@ -1,0 +1,10 @@
+.container {
+  max-width: 720px;
+  margin: auto;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}

@@ -1,0 +1,81 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h3.headingname {
+  text-align: center;
+  text-decoration: underline;
+  border-bottom: 1px solid #ccc;
+}
+h3.headingname:before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  border-bottom: 1px solid #aaa;
+  content: "Kars4Kash";
+}
+
+.flex-container {
+  display: flex;
+  background-color: black;
+  color: #fff;
+}
+
+.flex-child-1 {
+  width: 40%;
+}
+
+.flex-child-2 {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.visit {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visit h1 {
+  width: 30%;
+}
+
+.visit span {
+  font-weight: 500;
+}
+
+.line {
+  width: 20%;
+  height: 1px;
+  background-color: #747474;
+}

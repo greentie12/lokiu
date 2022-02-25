@@ -1,0 +1,22 @@
+<!-- Create a Maintenance Request record. Html section -->
+
+<template>
+  <lightning-card>
+    <div class="slds-p-horizontal_small container">
+      <h2>Maintenance Request</h2>
+      <!--Implementing LDS-->
+      <lightning-record-form
+        object-api-name={objectName}
+        fields={objectFields}
+        columns="2"
+        density="comfy"
+        onload={handleLoad}
+        oncancel={handleCancel}
+        onsubmit={handleSubmit}
+        onsuccess={handleSucess}
+        onerror={handleError}
+      >
+      </lightning-record-form>
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<!--Mohammed Azad - Creating the lightning record form.-->
+<template>
+  <lightning-card>
+    <div class="container">
+      <h2>Request a Quote</h2>
+      <lightning-record-form
+        object-api-name={objectApiName}
+        fields={fields}
+        onsuccess={handleSuccess}
+        oncancel={handleCancel}
+        onsubmit={handleSubmit}
+        density="compact"
+      ></lightning-record-form>
+    </div>
+  </lightning-card>
+</template>
